@@ -12,7 +12,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "TBL_PRODUCT1")
+@Table(name = "TBL_PRODUCT")
 public class Product {
 
 	@Id
