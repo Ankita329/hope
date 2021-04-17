@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "TBL_ORDER1")
+@Table(name = "TBL_ORDER")
 public class Order {
 
 	@Id

@@ -8,7 +8,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "TBL_ORDER_ITEM1")
+@Table(name = "TBL_ORDER_ITEM")
 public class OrderItem {
 	
 	@Id

@@ -12,7 +12,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "TBL_USERCART1")
+@Table(name = "TBL_USERCART")
 public class Cart {
 	
 	@Id
