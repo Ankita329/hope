@@ -26,6 +26,18 @@ public class Retailer {
 	@Column(name = "RETAILER_MOBILE_NO")
 	private String mobileNo;
 	
+	@Column(name = "RETAILER_PASSWORD")
+	private String password;
+	
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	@OneToMany(mappedBy = "retailer", cascade = CascadeType.ALL)
 	private List<Product> products;
 

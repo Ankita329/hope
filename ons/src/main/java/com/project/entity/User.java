@@ -39,8 +39,8 @@ public class User {
 	@Column(name = "MOBILE_NO")
 	private String mobileNo;
 	
-	@OneToOne(mappedBy="user", cascade = CascadeType.ALL)
-	private Cart cart;
+	/*@OneToOne(mappedBy="user", cascade = CascadeType.ALL)
+	private Cart cart;*/
 	
 	
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
@@ -58,13 +58,13 @@ public class User {
 		return name;
 	}
 
-	public Cart getCart() {
+	/*public Cart getCart() {
 		return cart;
 	}
 
 	public void setCart(Cart cart) {
 		this.cart = cart;
-	}
+	}*/
 
 	public void setName(String name) {
 		this.name = name;

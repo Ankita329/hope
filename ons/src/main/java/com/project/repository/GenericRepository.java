@@ -16,9 +16,6 @@ public class GenericRepository {
 		return updatedObj;
 	}
 	
-	//Customer c = dao.fetch(Customer.class, 123);
-	//Order o = dao.fetch(Order.class, 111);
-	//Product p = (Product) dao.fetch(Order.class, 111);--->compilation error
 	public <E> E fetch(Class<E> clazz, Object pk) { // in place in E anything will be fine
 		E e = entityManager.find(clazz, pk);
 		return e;
